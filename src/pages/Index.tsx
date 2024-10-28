@@ -3,10 +3,10 @@ import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
 import {
-  HoverCard,
-  HoverCardContent,
-  HoverCardTrigger,
-} from "@/components/ui/hover-card";
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 import { HelpCircle } from "lucide-react";
 import { useState } from "react";
 
@@ -47,16 +47,16 @@ const Index = () => {
                 <RadioGroupItem value="supporting" id="supporting" />
                 <Label htmlFor="supporting" className="flex items-center">
                   賛助会員
-                  <HoverCard>
-                    <HoverCardTrigger>
+                  <Popover>
+                    <PopoverTrigger>
                       <HelpCircle className="h-4 w-4 text-gray-400 cursor-help ml-1" />
-                    </HoverCardTrigger>
-                    <HoverCardContent className="w-80">
+                    </PopoverTrigger>
+                    <PopoverContent className="w-80">
                       <p className="text-sm">
                         賛助会員とは、法人やその他の会員制組織において、事業への賛同の意を表して入会・登録する会員です。運営や実行には直接関与せず、入会金や賛助会費によって組織を支援します。
                       </p>
-                    </HoverCardContent>
-                  </HoverCard>
+                    </PopoverContent>
+                  </Popover>
                   として新規に入会する
                 </Label>
               </div>
